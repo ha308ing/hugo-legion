@@ -1,5 +1,8 @@
 {{ define "main" }}
   <main>
+    <h1>This is section.html template (for page with children)</h1>
+    {{ partial "section-pages" . }}
     {{ .Content }}
   </main>
 {{ end }}
+
