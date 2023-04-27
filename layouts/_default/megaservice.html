@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <main>
+    <h1>This is ohrana-objektov.html qq template</h1>
+    {{ partial "section-pages" . }}
+    {{ partial "menu/ohrana-objektov.html" (dict "menuID" "ohrana-objektov" "page" .) }}
+    {{ .Content }}
+  </main>
+{{ end }}
+

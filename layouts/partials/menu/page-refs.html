@@ -1,0 +1,16 @@
+{{- range site.Menus.main }}
+  <a
+    href="{{ .URL }}"
+    {{/* access params key defined in menu entries */}}
+    {{- with .Params.class -}}
+      class="{{ . }}"
+    {{- end -}}
+  >
+    {{ .Name }}
+    {{- with .Page }}
+      {{- with .Params.version -}}
+        ({{ . }})
+      {{- end }}
+    {{- end }}
+  </a>
+{{- end }}
