@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main>
-    <h1>This is main tamplate</h1>
+    <h1>This is home tamplate</h1>
+    {{ partial 'menu/menu-main' . }}
     {{ .Content }}
   </main>
 {{ end }}

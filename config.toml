@@ -1,3 +1,30 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Legion'
+[menu]
+  [[menu.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 10
+  [[menu.main]]
+    name = 'Reviews'
+    pageRef = '/reviews'
+    weight = 20
+  [[menu.main]]
+    name = 'Contacts'
+    pageRef = '/contacts'
+    # weight = 30
+  [[menu.services]]
+    name = 'Inkassaciya'
+    pageRef = '/services/inkassaciya'
+  [[menu.services]]
+    name = 'Ohrana Objektov'
+    pageRef = '/services/ohrana-objektov'
+    weight = 10
+  [[menu.ohrana-objektov]]
+    name = 'Ohrana Doma'
+    pageRef = '/services/ohrana-objektov/ohrana-doma'
+  [[menu.ohrana-objektov]]
+    name = 'Ohrana Ofisov'
+    pageRef = '/services/ohrana-objektov/ohrana-ofisov'
+
