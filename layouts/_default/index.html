@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main>
     <h1>This is index.html template ( main page )</h1>
+    {{ partial "menu/main.html" . }}
     {{ .Content }}
   </main>
 {{ end }}
